@@ -10,7 +10,7 @@ function main() {
     let classificacao = "";
     classificacao = classificarIMC(valorIMC);
 
-    resultado.textContent = "IMC: " + valorIMC + " | " + classificacao;
+    resultado.textContent = `IMC: ${valorIMC} | ${classificacao}`;
   } else {
     resultado.textContent = "Preencha todos os campos!!!";
   }
