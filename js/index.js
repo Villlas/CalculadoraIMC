@@ -16,13 +16,9 @@ function main() {
   }
 }
 
-function calcularIMC(altura, peso) {
-  let valor;
-  valor = (peso / altura ** 2).toFixed(1);
-  return valor;
-}
+const calcularIMC = (altura, peso) => (valor = (peso / altura ** 2).toFixed(1));
 
-function classificarIMC(imc) {
+const classificarIMC = (imc) => {
   let grau = "";
   if (imc < 18.5) grau = "Abaixo do peso.";
   else if (imc < 25) grau = "Peso Ideal";
@@ -31,6 +27,6 @@ function classificarIMC(imc) {
   else if (imc < 40) grau = "Obesidade grau II";
   else grau = "Obesidade mórbida";
   return grau;
-}
+};
 
 calcular.addEventListener("click", main);
