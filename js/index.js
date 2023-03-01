@@ -12,7 +12,7 @@ function main() {
 
     resultado.textContent = `IMC: ${valorIMC} | ${classificacao}`;
   } else {
-    resultado.textContent = "Preencha todos os campos!!!";
+    resultado.textContent = "Preencha todos os campos!";
   }
 }
 
